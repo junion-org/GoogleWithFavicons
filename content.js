@@ -6,8 +6,8 @@ $(document).bind('DOMNodeInserted', function(event) {
         if (!$(this).children('img')[0]) {
             var domain  = $(this).attr('href').split('/')[2];
             var favicon = $('<img>').attr({
-                'src': "//www.google.com/s2/favicons?domain=" + domain,
-                'class': 'search-results-with-favicon',
+                'src': '//www.google.com/s2/favicons?domain=' + domain,
+                'class': 'google-with-favicons',
             });
             $(this).prepend(favicon);
         }
