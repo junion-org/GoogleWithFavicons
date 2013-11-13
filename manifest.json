@@ -1,13 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "GoogleWithFavicons",
-    "version": "1.0",
+    "name": "Google With Favicons",
+    "version": "1.0.1",
     "description": "Chrome extension that shows favicons in google search results.",
     "content_scripts": [{
         "matches": ["*://www.google.co.jp/*", "*://www.google.com/*"],
         "css": ["style.css"],
-        "js": ["jquery-2.0.3.min.js", "content.js"],
-        "run_at": "document_idle"
+        "js": ["jquery-2.0.3.min.js", "content.js"]
     }],
     "web_accessible_resources": ["jquery-2.0.3.min.map"]
 }
