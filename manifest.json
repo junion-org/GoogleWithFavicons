@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Google with Favicons",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Chrome extension which shows favicons in Google search results.",
     "content_scripts": [{
         "matches": ["*://*/*"],
