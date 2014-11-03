@@ -1,12 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "Google With Favicons",
-    "version": "1.0.1",
-    "description": "Chrome extension that shows favicons in google search results.",
+    "name": "Google with Favicons",
+    "version": "1.0.0",
+    "description": "A Chrome extension which shows favicons in Google search results.",
     "content_scripts": [{
-        "matches": ["*://www.google.co.jp/*", "*://www.google.com/*"],
-        "css": ["style.css"],
-        "js": ["jquery-2.0.3.min.js", "content.js"]
+        "matches": ["*://*/*"],
+        "include_globs": ["http://www.google.*/*", "https://www.google.*/*"],
+        "css": ["css/style.css"],
+        "js": ["js/jquery-2.1.1.min.js", "js/content.js"]
     }],
-    "web_accessible_resources": ["jquery-2.0.3.min.map"]
+    "icons": {
+        "128": "img/icon-128.png",
+        "48":  "img/icon-48.png",
+        "16":  "img/icon-16.png"
+    }
 }
